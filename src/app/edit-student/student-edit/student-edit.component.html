@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="header">Edit Student</h2>
+        <button mat-raised-button  class="back"  color="accent"  (click)="goBack()"> Back</button>
+      <div class="row">
+        <div class="col-md-6"><img src="../../assets/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg"></div>
+      <div class="col-md-6">
+        <form [formGroup]="registrationForm"  >
+      
+          <!-- Student Id -->
+<div class="form-group">
+  <input placeholder="Student Id" formControlName="studentId" type="number" class="form-control" >
+</div>
+
+          <!-- Student Name -->
+<div class="form-group">
+  <input placeholder="Student Name" formControlName="studentName" type = "text" class="form-control" >
+</div>
+              <!--student gender -->
+<div class="radioSelect">
+<div class="form-group">
+  <!-- <input placeholder="Gender" formControlName="gender" type = "text" class="form-control" > -->
+  <span class="gender">Gender :</span><mat-radio-group aria-label="Select an option"  formControlName="gender"  >
+     <span class="radio" > <mat-radio-button  value="Male"><span style="color: blue;" >Male</span></mat-radio-button>
+  <mat-radio-button   value="Female"><span style="color: rgb(242, 11, 153);">Female</span></mat-radio-button>
+</span></mat-radio-group>
+</div>
+           <!-- student branch -->
+<mat-form-field style="margin-left: 50px;">
+<mat-label >Branch </mat-label>
+<mat-select formControlName="branch"  >
+<mat-option [value]="element" *ngFor="let element of branchList  ">{{element}}</mat-option>
+</mat-select>
+</mat-form-field>
+</div>
+           <!-- college -->
+<div class="form-group">
+  <input placeholder="collegeName" formControlName="collegeName" type = "text" class="form-control" >
+</div>
+             <!-- student city -->
+<div class="form-group">
+  <input placeholder="City" formControlName="city" type = "text" class="form-control" >
+</div>
+        
+
+<button mat-raised-button   color="primary"  class="btn btn-primary" type="submit" [disabled]="registrationForm.invalid" (click)="editStudent()"> Edit</button>
+
+
+</form>
+      </div>
+      </div>
+      
+      </div>
+</div>

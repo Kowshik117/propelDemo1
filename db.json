@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "8868",
+      "studentId": 1234,
+      "studentName": "propel",
+      "gender": "Male",
+      "branch": "ECE",
+      "collegeName": "JNTU",
+      "city": "hyderabad"
+    },
+    {
+      "id": "1091",
+      "studentId": 112,
+      "studentName": "Nagendra",
+      "gender": "Male",
+      "branch": "ME",
+      "collegeName": "SV",
+      "city": "Visag"
+    }
+  ]
+}
