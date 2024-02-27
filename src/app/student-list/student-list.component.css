@@ -41,7 +41,11 @@ table {
  
 }
 .back{
-  margin-left: 1000px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.add{
+  margin-left: 900px;
   margin-bottom: 20px;
 }
 

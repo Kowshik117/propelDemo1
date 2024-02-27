@@ -11,18 +11,20 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { AddStudentComponent } from './add-student/add-student.component';
 
 //angualr material imports
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { StudentListComponent } from './student-list/student-list.component';
-import {MatTableModule} from '@angular/material/table';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { studentInterceptor } from './student-interceptor';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule} from '@angular/material/sort';
+import { MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { studentInterceptor } from './student-interceptor';
     HomeComponent,
     HeaderComponent,
    StudentListComponent,
-    AddStudentComponent
+  
    
   ],
   imports: [
@@ -46,8 +48,14 @@ import { studentInterceptor } from './student-interceptor';
      HttpClientModule,
      MatRadioModule,
      MatSelectModule,
-     MatFormFieldModule
+     MatFormFieldModule,
+     MatSortModule,
+     MatInputModule,
+     MatPaginatorModule
  
+  ],
+  exports:[
+    MatPaginatorModule
   ],
   providers: [StudentServiceService , {
     provide : HTTP_INTERCEPTORS, useClass:studentInterceptor ,multi:true

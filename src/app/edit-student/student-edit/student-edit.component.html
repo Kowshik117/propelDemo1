@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="container">
-        <h2 class="header">Edit Student</h2>
+        <h2 class="header">{{butn}} Student</h2>
         <button mat-raised-button  class="back"  color="accent"  (click)="goBack()"> Back</button>
       <div class="row">
         <div class="col-md-6"><img src="../../assets/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg"></div>
@@ -43,7 +43,8 @@
 </div>
         
 
-<button mat-raised-button   color="primary"  class="btn btn-primary" type="submit" [disabled]="registrationForm.invalid" (click)="editStudent()"> Edit</button>
+<button mat-raised-button   color="primary"  class="btn btn-primary" type="submit" [disabled]="registrationForm.invalid" (click)="buttonClick()">{{butn}}</button>
+
 
 
 </form>

@@ -2,7 +2,7 @@
   "students": [
     {
       "id": "8868",
-      "studentId": 1234,
+      "studentId": 123,
       "studentName": "propel",
       "gender": "Male",
       "branch": "ECE",
@@ -10,13 +10,76 @@
       "city": "hyderabad"
     },
     {
-      "id": "1091",
-      "studentId": 112,
-      "studentName": "Nagendra",
+      "id": "f19d",
+      "studentId": 113,
+      "studentName": "seetha",
+      "gender": "Female",
+      "branch": "ECE",
+      "collegeName": "SV",
+      "city": "Tirupati"
+    },
+    {
+      "id": "78f7",
+      "studentId": 114,
+      "studentName": "Ram",
+      "gender": "Male",
+      "branch": "CSE",
+      "collegeName": "Rise",
+      "city": "Ongole"
+    },
+    {
+      "id": "76a4",
+      "studentId": 115,
+      "studentName": "Shiva",
+      "gender": "Male",
+      "branch": "CIVIL ENGINEERING",
+      "collegeName": "SV",
+      "city": "Tirupati"
+    },
+    {
+      "id": "6d5f",
+      "studentId": 121,
+      "studentName": "Sandeep",
+      "gender": "Male",
+      "branch": "ECE",
+      "collegeName": "JNTU",
+      "city": "Hyd"
+    },
+    {
+      "id": "c3d1",
+      "studentId": 141,
+      "studentName": "Sravan",
       "gender": "Male",
       "branch": "ME",
+      "collegeName": "SSN",
+      "city": "Nandyala"
+    },
+    {
+      "id": "914d",
+      "studentId": 161,
+      "studentName": "Pradeep",
+      "gender": "Male",
+      "branch": "ECE",
       "collegeName": "SV",
-      "city": "Visag"
+      "city": "Chennai"
+    },
+    {
+      "id": "37af",
+      "studentId": 191,
+      "studentName": "Teja",
+      "gender": "Male",
+      "branch": "ME",
+      "collegeName": "MBR",
+      "city": "Ongole"
+    },
+    {
+      "id": "d0d5",
+      "studentId": 98986,
+      "studentName": "Aadesh",
+      "gender": "Male",
+      "branch": "ME",
+      "collegeName": "SSN",
+      "city": "HYd"
     }
   ]
 }

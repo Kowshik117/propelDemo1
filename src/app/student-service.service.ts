@@ -18,7 +18,7 @@ return this.http.post(this.url + '/students',student)
   return this.http.get(this.url + '/students', {responseType: 'json'})
 }
 
-deleteStudent(id: Number) : Observable<any> {
+deleteStudent(id: any) : Observable<any> {
   return this.http.delete(this.url + '/students/' + id, {responseType: 'json'} )
 }
 
